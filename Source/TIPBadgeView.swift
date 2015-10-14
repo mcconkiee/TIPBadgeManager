@@ -21,9 +21,9 @@ public class TIPBadgeView: UIView {
     
     public init(){
         super.init(frame: CGRect(x: 0, y: 0, width: 18, height: 18))
-        self.backgroundColor = UIColor.redColor()
+        self.backgroundColor = UIColor(red: 45.0 / 255.0, green: 160.0 / 255.0, blue: 218.0 / 255.0, alpha: 1)
         self.layer.zPosition = 1000
-        self.layer.cornerRadius = 9
+        self.layer.cornerRadius = self.frame.size.width / 2.0
         self.layer.masksToBounds = true
         addLabel()
     }

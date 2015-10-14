@@ -40,9 +40,10 @@ public class TIPViewObject: NSObject, TIPBadgeObject{
         
         bv!.addConstraints([badgeHeightConstraint])
         
-        let rightConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: bv!, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 7.0)
         
-        let topConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: bv!, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 5.0)
+        let rightConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: bv!, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 10.0)
+        
+        let topConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: bv!, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
         
         self.view!.addConstraints([rightConstraint, topConstraint])
         
